@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+</head>
+<body>
+<form action="/day06app/login" method="post" style="text-align: center">
+    {%csrf_token%}
+    <input type="text" placeholder="用户名" name="u_name">
+    <br>
+    <img src="/day06app/verify_img" alt="" id="code">
+    <br>
+    <input type="text" placeholder="验证码" name="verify_code">
+    <br>
+    <input type="submit" value="登录">
+
+
+</form>
+</body>
+    <script>
+        $("#code").click(function () {
+            console.log("被执行了");
+            $(this).attr("src", "/day06app/verify_img" + Math.random());
+
+        })
+    </script>
+</html>

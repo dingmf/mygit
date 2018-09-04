@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul>
+        {%for i in teachers%}
+            <li>{{i.name}}老师的薪资{{i.salary}}美金</li>
+            <p>{{i.get_base_msg}}</p>
+        {%endfor%}
+    </ul>
+    <!--数组，下标-->
+    <p>{{teachers.0.get_base_msg}}</p>
+    {comment}
+    <ul>
+        {%for i in teachers%}
+        {%if i.id==2 %}
+        <li style="color: yellow">{{i.name}}老师的工资是{{i.salary}}美金</li>
+        {%endfor%}
+        <li>{{i.name}}老师的薪资{{i.salary}}美金</li>
+        <!--{{i.get_base_msg}}访问方法，不能传参-->
+        <p>{{i.get_base_msg}}</p>
+        <!--{%empty%} 在数据为空的时候，显示i出来 不为空 就不显示-->
+        {%empty%}
+        <h1>请说修水话</h1>
+        {%endfor%}
+    </ul>
+    {endcomment}
+</body>
+</html>

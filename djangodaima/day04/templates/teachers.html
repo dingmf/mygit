@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+    <ul>
+        {%for i in teachers%}
+            <li>{{i.name}}老师的薪资是{{i.salary}}美金</li>
+            <p>{{i.get_base_msg}}</p>
+            {%empty%}
+            <h1>求求你别学了</h1>
+        {%endfor%}
+    </ul>
+    <p>{{teachers.2.get_base_msg}}</p>
+
+
+    <ul>
+        {%for i in teachers%}
+            {%if i.id == 2%}
+                <li style="color: yellow">{{i.name}}老师的薪资是{{i.salary}}美金</li>
+            {%else%}
+                <li>{{i.name}}老师的薪资是{{i.salay}}美金</li>
+            {%endif%}
+        <p>{{i.get_base_msg}}</p>
+        {%endfor%}
+    </ul>
+
+    <ul>
+        {%for i in teachers%}
+            <li>第{{forloop.counter}}条数据是：{{i.get_base_msg}}</li>
+
+        {%endfor%}
+    </ul>
+    <hr>
+    <a href="{%url 'python1803:dmf'%}">找对象</a>
+    <hr>
+    <p>找老师</p>
+        {%for i in teachers%}
+            <a href="{%url 'python1803:zhangsan' i.id%}"><li>工资是{{i.salary}}的老师是</li></a>
+        {%endfor%}
+</body>
+</html>

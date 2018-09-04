@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {%for i in teachers%}
+        {%widthratio i.age 1 3%}
+    {%endfor%}
+    <br>
+    <ul>
+        {%for i in teachers%}
+        {%if i.id|divisibleby:2%}
+            <li>{{i.get_base_msg}}</li>
+        {%else%}
+            <li style="color: green">{{i.get_base_msg}}</li>
+        {%endif%}
+        {%endfor%}
+    </ul>
+    <hr>
+    <!--{{msg | safe}}-->
+</body>
+</html>
