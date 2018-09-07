@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        img{
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+</head>
+<body>
+欢迎{{ u_name }}
+<img src="{{ icon }}" alt="">
+<form action="/dj05app/update" enctype="multipart/form-data" method="post">
+    <input type="file" name="u_icon">
+    <input type="submit" value="上传头像">
+</form>
+</body>
+</html>

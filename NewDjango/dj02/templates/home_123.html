@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+
+    <link rel="stylesheet" href="../static/css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/bootstrap-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/swiper.css"/>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/reset.css"/>
+
+    <link rel="stylesheet" type="text/css" href="../static/css/home.css"/>
+
+</head>
+
+<body>
+
+<div class="container-fluid">
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Rock</a>
+            </div>
+            <ul class="nav navbar-nav navbar-right">
+                <li>
+                    <a href="#">注册</a>
+                </li>
+                <li>
+                    <a href="#">登陆</a>
+                </li>
+                <!--<li>
+                    <a class="icon" href="#">
+                        <img width="40" height="40" class="img-circle" alt="" src="https://cs.vmovier.com/Uploads/Banner/2017/12/23/5a3d52d82724d.png" />
+                    </a>
+                </li>
+
+                <li>
+                    <a href=""><span>Username</span></a>
+                </li>-->
+            </ul>
+        </div>
+
+    </nav>
+
+
+    {#            轮播#}
+
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="https://cs.vmovier.com/Uploads/Banner/2017/12/23/5a3d52d82724d.png" alt="...">
+
+            </div>
+            <div class="item">
+                <img src="https://cs.vmovier.com/Uploads/Banner/2017/12/18/5a379a0c4bff3.jpg" alt="...">
+
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <ul class="nav nav-tabs child-nav">
+        <li role="presentation" class="active">
+            <a href="#">最新推荐</a>
+        </li>
+        <!--<li role="presentation">
+            <a href="#">收藏</a>
+        </li>-->
+
+    </ul>
+
+
+    <ul class="movie_list">
+        <li>
+            <div class="movie_list_left">
+                <a target="_blank" href="#" title="我就是水">
+                    <img src="http://img1.3lian.com/2015/a1/89/d/63.jpg"
+                         alt="我就是水">
+                    <div class="bottom-cover">
+                        <span class="film-time">02:48</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="movie_list_right">
+                <h2>
+                    <a target="_blank" href="shui.html" title="我就是水">
+                        <span>我就是水</span>
+                    </a>
+                </h2>
+
+                <div class="movie-intro">
+                    没有谁！！！
+                </div>
+                <div class="movie-like">
+                    <span class="glyphicon glyphicon-heart" style="color: red;"></span>
+                    <span>200</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="movie_list_left">
+                <a target="_blank" href="#" title="我就是火">
+                    <img src="http://pic26.photophoto.cn/20130324/0036036837895295_b.jpg"
+                         alt="我就是火">
+                    <div class="bottom-cover">
+                        <span class="film-time">02:48</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="movie_list_right">
+                <h2>
+                    <a target="_blank" href="huo.html" title="我就是火">
+                        <span>我就是火</span>
+                    </a>
+                </h2>
+
+                <div class="movie-intro">
+                    我就是火
+                </div>
+                <div class="movie-like">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span>199</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="movie_list_left">
+                <a target="_blank" href="#" title="可爱">
+                    <img src="http://img5.imgtn.bdimg.com/it/u=1326309070,875671825&fm=27&gp=0.jpg"
+                         alt="可爱">
+                    <div class="bottom-cover">
+                        <span class="film-time">02:48</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="movie_list_right">
+                <h2>
+                    <a target="_blank" href="keai.html" title="可爱">
+                        <span>可爱</span>
+                    </a>
+                </h2>
+
+                <div class="movie-intro">
+                    我就是可爱
+                </div>
+                <div class="movie-like">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span>199</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="movie_list_left">
+                <a target="_blank" href="#" title="酷">
+                    <img src="http://i1.hdslb.com/bfs/archive/8008229913c55d4ce631109d053be4658858d039.jpg"
+                         alt="酷">
+                    <div class="bottom-cover">
+                        <span class="film-time">02:48</span>
+                    </div>
+                </a>
+            </div>
+
+            <div class="movie_list_right">
+                <h2>
+                    <a target="_blank" href="ku.html" title="酷">
+                        <span>酷</span>
+                    </a>
+                </h2>
+
+                <div class="movie-intro">
+                    酷
+                </div>
+                <div class="movie-like">
+                    <span class="glyphicon glyphicon-heart"></span>
+                    <span>199</span>
+                </div>
+            </div>
+        </li>
+        <li>
+            <div class="movie_list_left">
+                <a target="_blank" href="#" title="美">
+                    <img src="http://img.tupianzj.com/uploads/allimg/160518/9-16051Q51I1I3.JPG"

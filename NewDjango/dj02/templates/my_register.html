@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>用户注册</title>
+</head>
+<body>
+<form action="{% url 'dj02app:my_register' %}" method="post" enctype="multipart/form-data" style="text-align: center">
+    {% csrf_token %}
+    <input type="text" name="u_name" placeholder="用户名">
+    <br>
+    <input type="text" name="phone" placeholder="手机号">
+    <br>
+    <input type="password" name="pwd" placeholder="密码">
+    <br>
+    <input type="password" name="cpwd" placeholder="确认密码">
+    <br>
+    <input type="email" name="email" placeholder="邮箱">
+    <br>
+    <input type="file" name="u_icon">
+    <br>
+    <input type="submit" value="注册">
+</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for i in data %}
+    <h1>{{ i }}</h1>
+    <br>
+    {% empty %}
+    <h1 style="color: red">困</h1>
+{% endfor %}
+</body>
+</html>

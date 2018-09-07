@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<form action="{%url 'dj04app:login'%}" method="post" style="text-align: center">
+    <input type="text" placeholder="用户名" name="u_name">
+    {% csrf_token %}
+    <br>
+    <input type="password" placeholder="密码" name="pwd">
+    <br>
+    <input type="submit" value="提交">
+</form>
+</body>
+</html>

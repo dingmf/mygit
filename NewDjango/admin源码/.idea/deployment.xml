@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="server">
+    <serverData>
+      <paths name="server">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/home/ubuntu/gz1803/py3_gz1803/lib/python3.6/site-packages/tinymce/static/" local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
